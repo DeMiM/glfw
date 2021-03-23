@@ -36,7 +36,7 @@ project "omega-vendor-glfw"
 		"src/window.c"
 	}
 
-	filter { "system:windows" }		
+	filter { "system:windows" }
 		systemversion "latest"
 		defines { "WIN32", "_WINDOWS", "_GLFW_WIN32", "_CRT_SECURE_NO_WARNINGS" }
 		files {			
