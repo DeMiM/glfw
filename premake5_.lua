@@ -1,6 +1,6 @@
 -- Vendor: GLFW
 
-project "v4f-vendor-glfw"
+project "omega-vendor-glfw"
 	location (OFFSET_PRJ)
 
 	filter { "configurations:debug" }
