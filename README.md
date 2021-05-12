@@ -127,6 +127,8 @@ information on what to include when reporting a bug.
  - Added `GLFW_FEATURE_UNIMPLEMENTED` error for incomplete backends (#1692)
  - Added `GLFW_ANGLE_PLATFORM_TYPE` init hint and `GLFW_ANGLE_PLATFORM_TYPE_*`
    values to select ANGLE backend (#1380)
+ - Added `GLFW_X11_XCB_VULKAN_SURFACE` init hint for selecting X11 Vulkan
+   surface extension (#1793)
  - Made joystick subsystem initialize at first use (#1284,#1646)
  - Updated the minimum required CMake version to 3.1
  - Disabled tests and examples by default when built as a CMake subdirectory
@@ -163,6 +165,9 @@ information on what to include when reporting a bug.
    (#1582)
  - [Win32] Bugfix: `GLFW_SCALE_TO_MONITOR` had no effect on systems older than
    Windows 10 version 1703 (#1511)
+ - [Win32] Bugfix: `USE_MSVC_RUNTIME_LIBRARY_DLL` had no effect on CMake 3.15 or
+   later (#1783,#1796)
+ - [Win32] Bugfix: Compilation with LLVM for Windows failed (#1807,#1824,#1874)
  - [Cocoa] Added support for `VK_EXT_metal_surface` (#1619)
  - [Cocoa] Added locating the Vulkan loader at runtime in an application bundle
  - [Cocoa] Moved main menu creation to GLFW initialization time (#1649)
@@ -289,6 +294,7 @@ skills.
  - Andrew Corrigan
  - Bailey Cosier
  - Noel Cower
+ - CuriouserThing
  - Jason Daly
  - Jarrod Davis
  - Olivier Delannoy
